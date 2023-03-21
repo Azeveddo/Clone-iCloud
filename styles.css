@@ -1,0 +1,50 @@
+body{
+    background-image: url("imgs/wallpaper.webp");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#navbarColor{
+    background-color: rgba(37,38,40,.29);
+    backdrop-filter: blur(14px);
+    height: 44px;  
+}
+#iconsNavbar{
+    filter: invert(1)brightness(9);
+    height: 100%;
+    width: 18px;
+}
+#iconsNavbarProfile{
+    height: 100%;
+    width: 28px;
+}
+#dropdownMenuButton{
+    outline: none;
+}
+#dropdownMenuButton:hover{
+    background-color: rgba(37,38,40,.10);
+}
+.btn.show{
+    border-color: transparent;
+}
+#dropdownMenuGrid{
+    width: auto;
+    height: auto;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.dropdown-menu{
+    padding: 5px;
+}
+#cardsMenuDropdown{
+    min-width: 280px;
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid rgba(37,38,40,.3);
+    
+}
