@@ -1,8 +1,6 @@
 body{
     background-image: url("imgs/wallpaper.webp");
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
+    background-size:cover;
 }
 a{
     text-decoration: none;
@@ -33,18 +31,43 @@ a{
 }
 #dropdownMenuGrid{
     width: auto;
-    height: auto;
     border: none;
     margin: 0;
     padding: 0;
 }
-.dropdown-menu{
-    padding: 5px;
-}
+
 #cardsMenuDropdown{
-    min-width: 280px;
-    margin: 0px;
+    max-width: 100%;
+    min-width: 340px;
     padding: 10px;
-    border: 1px solid rgba(37,38,40,.3);
+}
+#text-navbar-points{
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+#cardsMainBody{
+    min-height: 315px;
+    min-width: 315px;
+    max-height: 315px;
     
 }
+#cardsMainBody:hover{
+    box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.3);
+    -xpedu-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
+        transition: all 0.3s ease;
+        
+}
+.table > tbody > tr > td:not(:first-child) {
+    border-left: 1px solid #dee2e6;
+    
+  }
+  .table > tbody > tr:first-child > td:not(:first-child) {
+    border-top: 0;
+  }
+  .table > tbody > tr > td {
+    border-top: 0;
+  }
+  

@@ -10,8 +10,8 @@
     <title>Document</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand pe-3" id="navbarColor">
+  <header class="w-100">
+    <nav class="navbar navbar-expand z-1 pe-3" id="navbarColor" style="max-width: none;">
       <div class="container-fluid mx-2">
           <a class="navbar-brand text-light" href="#">
           <img src="imgs/apple.png" alt="Logo" class="mb-2" id="iconsNavbar">
@@ -19,68 +19,182 @@
           </a>
       </div>
                       <!--------- botão GRID-POINTS da navbar---------->
-      <div class="dropdown">
+        <div class="dropdown">
         <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src="imgs/grid3x3.svg" id="iconsNavbar" alt="gridMenuOptions">
         </button>
-        <div class="dropdown-menu dropdown-menu-end rounded-4 border-0 me-auto" aria-labelledby="dropdownMenuButton" id="dropdownMenuGrid">
-          <div class="card rounded-4" id="cardsMenuDropdown">
-            <h5 class="card-title">Luciano Azevedo</h5>
-            <h6 class="card-subtitle text-muted mb-3">lucianoalbertop@hotmail.com</h6>
-            <div class="card-footer">
-              <a href="#">
-                <img src="imgs/iconGear.svg" alt="Opção ajustes">
-                Ajustes do iCloud
-              </a>
-            </div>
+        
+      <div class="dropdown-menu dropdown-menu-end rounded-4 " aria-labelledby="dropdownMenuButton" id="dropdownMenuGrid">
+        <div class="card rounded-4" id="cardsMenuDropdown">
+          <div class="container">
+            <p class="card-subtitle m-1 col-12">Apps</p>
           </div>
-        </div> 
-      </div>
+          <!-- Coluna 1 -->
+          <div class="container my-2">
+            <div class="row text-center row-gap-2">  
+              <a class="col-3 text" href="#">
+                <img src="imgs/email-icon.png" width="54px" height="54px" alt=""> 
+                <div id="text-navbar-points">Email</div>
+              </a>
+              <a class="col-3" href="#">
+                <img src="imgs/contatos-icon.png" width="54px" height="54px" alt=""> 
+                <div id="text-navbar-points">Contatos</div>
+              </a>
+              <a class="col-3" href="#">
+                <img src="imgs/calendar-check-icon.svg" width="54px" height="54px" alt=""> 
+                <div id="text-navbar-points">Calendario</div>
+              </a>
+              <a class="col-3" href="#">
+                <img src="imgs/fotos-icon.png" width="54px" height="54px" alt=""> 
+                <div id="text-navbar-points">Fotos</div>
+              </a>
+          </div>
+          </div>
+          <!-- Coluna 2 -->
+          <div class="container my-2">
+            <div class="row text-center row-gap-2">  
+              <a class="col-3 text" href="#">
+                <img src="imgs/cloud icon.png" width="54px" height="54px" alt=""> 
+                <div id="text-navbar-points">Drive</div>
+              </a>
+              <a class="col-3" href="#">
+                <img src="imgs/notas-icon.png" width="54px" height="54px" alt=""> 
+                <div id="text-navbar-points">Notas</div>
+              </a>
+              <a class="col-3" href="#">
+                <img src="imgs/tarefas.png" width="54px" height="54px" alt=""> 
+                <div id="text-navbar-points">Lembretes</div>
+              </a>
+              <a class="col-3" href="#">
+                <img src="imgs/pages-icon.png" width="54px" height="54px" alt=""> 
+                <div id="text-navbar-points">Pages</div>
+              </a>
+          </div>
+          </div>
+          <!-- Coluna 3 -->
+          <div class="container my-3">
+            <div class="row text-center row-gap-2">  
+              <a class="col-3 text" href="#">
+                <img src="imgs/rede-icon.png" width="54px" height="54px" alt=""> 
+                <div id="text-navbar-points">Numbers</div>
+              </a>
+              <a class="col-3" href="#">
+                <img src="imgs/keynotes-icon.png" width="54px" height="54px" alt=""> 
+                <div id="text-navbar-points">Keynotes</div>
+              </a>
+              <a class="col-3" href="#">
+                <img src="imgs/radar-icon.png" width="54px" height="54px" alt=""> 
+                <div id="text-navbar-points">Buscar</div>
+              </a>
+              <a class="btn col-3 disabled border-0" href="#">
+                <img src="imgs/padrao bloco.png" width="54px" height="54px" alt=""> 
+              </a>
+          </div>
+          </div>
+          <!-- Coluna 4 lista links-->
+          <ul class="list-unstyled container">
+            <strong>Recursos do iCloud+</strong>
+            <li class="my-2">
+              <a href="#">
+                <img src="imgs/envelop-fill-icon.svg" alt="">
+                Ocultar Meu E-mail
+              </a>
+            </li>
+            <li class="my-2">
+              <a href="#">
+                <img src="imgs/envelop-fill-icon.svg" alt="">
+                Dominio de E-mail Personalizado
+              </a>
+            </li class="my-2">
+            <li>
+              <a href="#">
+                <img src="imgs/earth-icon.svg" alt="">
+                Retrasmissão Privada
+              </a>
+            </li>
+            <li class="my-2">
+              <a href="#">
+                <img src="imgs/webcam-icon.svg" alt="">
+                Video Seguro do HomeKit
+              </a>
+            </li>
+            <br>
+            <strong>Mais</strong>
+            <li class="my-2">
+              <a href="#">
+                <img src="imgs/database-icon.svg" alt="">
+                Seu Armazenado do iCloud
+              </a>
+            </li>
+            <li class="my-2">
+              <a href="#">
+                <img src="imgs/cloud.svg" alt="">
+                Seu Plano do iCloud
+              </a>
+            </li>
+            <li class="my-2">
+              <a href="#">
+                <img src="imgs/life-presever.svg" alt="">
+                Recuperação de Dados
+              </a>
+            </li>
+            <li class="my-2">
+              <a class="link-primary"href="#">
+                <img src="imgs/question-circle-icon.svg" alt="">
+                Guia do Usuário do iCloud
+                <img src="imgs/up-right-icon.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+      </div> 
+        </div>
                         <!------------ botão PLUS da navbar ------------>
-      <div class="dropdown">
+        <div class="dropdown">
         <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src="imgs/iconPlus.svg" id="iconsNavbar" alt="gridMenuOptions">
         </button>
           <div class="dropdown-menu dropdown-menu-end rounded-4 me-auto" aria-labelledby="dropdownMenuButton" id="dropdownMenuGrid">
             <div class="card rounded-4" id="cardsMenuDropdown">
               <h6 class="card-link">Criar</h6>
-            <div class="card-link">
+            <div class="card-link mb-1">
               <a href="#">
                 <img src="imgs/email-icon.png" width="20px" height="20px" alt="Mensagens de e-mail" class="me-2 mb-2">
                 Mensagens de e-mail
               </a>
             </div>
-            <div class="card-link">
+            <div class="card-link mb-1">
               <a href="#">
                 <img src="imgs/notas-icon.png" width="20px" height="20px" alt="Notas" class="me-2 mb-2">
                 Notas
               </a>
             </div>
-            <div class="card-link">
+            <div class="card-link mb-1">
               <a href="#">
                 <img src="imgs/calendar-check-icon.svg" width="20px" height="20px" alt="Evento no calendario" class="me-2 mb-2">
                 Evento no calendario
               </a>
             </div>
-            <div class="card-link">
+            <div class="card-link mb-1">
               <a href="#">
                 <img src="imgs/tarefas.png" width="20px" height="20px" alt="Lembrete" class="me-2 mb-2">
                 Lembretes
               </a>
             </div>
-            <div class="card-link">
+            <div class="card-link mb-1">
               <a href="#">
                 <img src="imgs/keynotes-icon.png" height="20px" width="20px" alt="Documento-do-Pages" class="me-2 mb-2">
                 Documento do Pages
               </a>
             </div>
-            <div class="card-link">
+            <div class="card-link mb-1">
               <a href="#">
                 <img src="imgs/graph-icon.png" height="20px" width="20px" alt="Planilha-do-Numbers" class="me-2 mb-2" >
                 Planilha do Numbers
               </a>
             </div>
-            <div class="card-link">
+            <div class="card-link mb-1">
               <a href="#">
                 <img src="imgs/pen-yellow-icon.png" width="20px" height="20px" alt="Apresentação-keynote" class="me-2 mb-2">
                 Apresentação Keynote
@@ -88,9 +202,9 @@
             </div>
           </div>
           </div> 
-      </div>
+        </div>
                         <!------------ botão PROFILE da navbar --------->
-      <div class="dropdown">
+        <div class="dropdown">
         <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src="imgs/iconProfile.jfif" alt="" id="iconsNavbarProfile">
         </button>
@@ -123,11 +237,123 @@
 
           </div>
         </div>  
-      </div>
+        </div>    
+    </nav>     
+  </header>
+    <div class="z-2 w-100">
+      <div class="container  py-5 " style="max-width:1035px;">
+        <div class="row g-4 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card bg-light rounded-4 " id="cardsMainBody" style="background-image: url('imgs/teste1.png'); background-size: 100%; background-position: center;">
+              <img class="m-4" src="imgs/iconProfile.jfif" width="114px" height="114px" alt="">
+              <div class="card-body pb-0">
+                <h2 class="card-title"><strong>Luciano</strong></h2>
+                <h6 class="card-subtitle my-1 text-muted">lucianoazevedoo@icloud.com</h6>
+                <p class="card-link pt-2"><strong>iCloud+</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6 col-sm-12">
+            <div class="card rounded-4 " id="cardsMainBody">
+              <div class="bg-primary bg-opacity-25 rounded-top-4 container-fluid">
+                <div class="d-flex flex-row p-3 align-items-center">
+                  <div class="">
+                    <a href="#">
+                      <img src="imgs/email-icon.png" style="width: 40px; height: 40px;" alt="Icone de e-mail">
+                  </div>
+                  <div class="container">
+                    <h5 class="m-0 p-0">Mail</h5>
+                    <p class="fw-light">Caixa de entrada # 0 mensagens não lidas</p>
+                  </div>
+                </a>
+                  <div class="ms-auto">
+                    <img src="imgs/box-arrow-icon.svg" alt="">
+                  </div>
+                </div>
+                
+              </div>
+              
+              <div class="table-responsive container">
+                <div class="p-4">
+                  <table class="table table-borderless ">
+                    <tbody class="text-center text-break">
+                      <tr>
+                        <td class="col-md-5 p-1">IBM Careers
+                          <p class="fw-light fs-6 p-0 m-0">Hello Luciano, good joob...</p>
+                        </td>
+                        <td class="col-md-7 d-none d-lg-table-cell p-1">Apple TV
+                          <p class="fw-light fs-6 p-0 m-0">Apple tv now with chat gpt...</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-5 p-1">IBM Careers
+                          <p class="fw-light fs-6 p-0 m-0">Hello Luciano, good joob...</p>
+                        </td>
+                        <td class="col-md-7 d-none d-lg-table-cell p-1">Apple TV
+                          <p class="fw-light fs-6 p-0 m-0">Apple tv now with chat gpt...</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-5 p-1">IBM Careers
+                          <p class="fw-light fs-6 p-0 m-0">Hello Luciano, good joob...</p>
+                        </td>
+                        <td class="col-md-7 d-none d-lg-table-cell p-1">Apple TV
+                          <p class="fw-light fs-6 p-0 m-0">Apple tv now with chat gpt...</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            
+            </div>
+          </div>
 
-    </div>
-  </nav>     
-</header>
+        </div>
+        <div class="row g-4 mb-4">
+          <div class="col-lg-8 col-md-6 col-sm-12" >
+            <div class="card  bg-light rounded-4" id="cardsMainBody">
+              <img src="imgs/iconProfile.jfif" width="114px" height="114px" alt="">
+              <div class="card-body pb-0">
+                <h3 class="card-title"><strong>Luciano</strong></h3>
+                <h6 class="card-subtitle my-1 text-muted">lucianoazevedoo@icloud.com</h6>
+                <p class="card-link pt-2"><strong>iCloud+</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12" >
+            <div class="card rounded-4" id="cardsMainBody">
+              <a class="card-link" href="#">
+                <img src="imgs/iconProfile.jfif" class="" width="114px" height="114px" alt="">
+                Teste
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12" >
+            <div class="card bg-light rounded-4" id="cardsMainBody">
+              <img src="imgs/iconProfile.jfif" width="114px" height="114px" alt="">
+              <div class="card-body pb-0">
+                <h3 class="card-title"><strong>Luciano</strong></h3>
+                <h6 class="card-subtitle my-1 text-muted">lucianoazevedoo@icloud.com</h6>
+                <p class="card-link pt-2"><strong>iCloud+</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6 col-sm-12" >
+            <div class="card rounded-4" id="cardsMainBody">
+              <a class="card-link" href="#">
+                <img src="imgs/iconProfile.jfif" class="" width="114px" height="114px" alt="">
+                Teste
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
