@@ -6,4 +6,4 @@ Também estou utilizando o BootStrap-icons, na versão atual v1.10.0
 Esse projeto tem como finalidade principal a utilidade do BootStrap e o uso de responsividade em geral.
 
 Project in progress!
-[30%]Completed
+[40%]Completed
